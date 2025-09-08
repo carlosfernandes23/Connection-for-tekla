@@ -951,7 +951,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "-- Versão 2024 -- Macros";
+            this.Text = "-- Versão 2025 -- Macros";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);

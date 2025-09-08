@@ -245,7 +245,7 @@ namespace LigacoesTekla
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string anotekla = "2024";
+            string anotekla = "2025";
             label4.Text = anotekla;
         }
        
@@ -505,7 +505,7 @@ namespace LigacoesTekla
         private void button59_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            string caminhoExe = @"\\marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\4 Produção\Desenvolvimentos\52.superomegas-tekla\2021\WindowsFormsApp1.exe";
+            string caminhoExe = @"\\marconi\COMPANY SHARED FOLDER\OFELIZ\OFM\2.AN\2.CM\DP\4 Produção\Desenvolvimentos\52.superomegas-tekla\2025\WindowsFormsApp1.exe";
 
             if (System.IO.File.Exists(caminhoExe))
             {
@@ -575,8 +575,9 @@ namespace LigacoesTekla
         private void CopiarAtalhos()
         {
             string nomedoutilisador = Environment.UserName;
-            string anotekla = "2024.0";
-            string origem = $@"\\marconi\OFELIZ\OFELIZ\OFM\2.AN\2.CM\DP\4 Produção\Desenvolvimentos\36.Ligaçõestekla\Copiar\{anotekla}\KeyboardShortcuts.xml";
+            string anotekla = "2025.0";
+            string pastaApp = AppDomain.CurrentDomain.BaseDirectory;
+            string origem = Path.Combine(pastaApp, anotekla, "KeyboardShortcuts.xml");
             string destino = $@"C:\Users\{nomedoutilisador}\AppData\Local\Trimble\Tekla Structures\{anotekla}\Settings\KeyboardShortcuts.xml";
 
             try
